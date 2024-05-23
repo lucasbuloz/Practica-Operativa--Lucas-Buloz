@@ -22,7 +22,7 @@ class gesCanchas:
             self.__cantidad += 1
             
     def inicializar(self):
-            archivo = open("poo/unidad2/practicaOperativaFiltrada/archivoscsv/Canchas.csv", "r")
+            archivo = open("PO filtrada t2 dani/Canchas.csv", "r")
             reader = csv.reader(archivo, delimiter=";")
             for fila in reader:
                 nCancha = Canchas((fila[0]), (fila[1]), float(fila[2]))

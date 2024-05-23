@@ -8,7 +8,7 @@ class gesAlquiler:
         self.__lista = []
         
     def inicializar(self):
-        archivo = open("poo/unidad2/practicaOperativaFiltrada/archivoscsv/Alquiler.csv", "r")
+        archivo = open("PO filtrada t2 dani/Alquiler.csv", "r")
         reader = csv.reader(archivo,delimiter=";")
         for fila in reader:
             nAlquiler = Alquiler((fila[0]), (fila[1]), (fila[2]), (fila[3]), int(fila[4]))
